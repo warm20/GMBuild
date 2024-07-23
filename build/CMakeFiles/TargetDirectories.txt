@@ -1,0 +1,3 @@
+D:/MyCodes/GMBuild/build/CMakeFiles/GMBuild.dir
+D:/MyCodes/GMBuild/build/CMakeFiles/edit_cache.dir
+D:/MyCodes/GMBuild/build/CMakeFiles/rebuild_cache.dir
