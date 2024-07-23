@@ -52,6 +52,7 @@ CMakeFiles/GMBuild.dir/src/core/gmb_string.c.obj: D:/MyCodes/GMBuild/src/core/gm
 CMakeFiles/GMBuild.dir/src/main.c.obj: D:/MyCodes/GMBuild/src/main.c \
   D:/MyCodes/GMBuild/src/core/gmb_array.h \
   D:/MyCodes/GMBuild/src/core/gmb_string.h \
+  D:/MyCodes/GMBuild/src/core/gmbdef.h \
   D:/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/limits.h \
   D:/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/mm_malloc.h \
   D:/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stddef.h \
@@ -116,6 +117,8 @@ D:/mingw64/x86_64-w64-mingw32/include/limits.h:
 D:/mingw64/x86_64-w64-mingw32/include/malloc.h:
 
 D:/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h:
+
+D:/MyCodes/GMBuild/src/core/gmbdef.h:
 
 D:/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h:
 
