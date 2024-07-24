@@ -17,19 +17,19 @@ gmb_array gmb_array_new_np(size_t ele_nums, size_t ele_size) {
     gmb_array p;
     p.ele_nums = ele_nums;
     p.ele_sz = ele_size;
-	p.cour = 0;
+    p.cour = 0;
 
     p.buffer = malloc( ele_nums * ele_size );
     return p;
 }
 
 void gmb_array_del(gmb_array *obj) {
-	if(obj==NULL) return;
-	free(obj->buffer);
-	obj->buffer = NULL;
-	free(obj);
-	obj = NULL;
-	return;
+    if(obj==NULL) return;
+    free(obj->buffer);
+    obj->buffer = NULL;
+    free(obj);
+    obj = NULL;
+    return;
 }
 
 int gmb_array_set(gmb_array *obj, size_t i, void* value) {
@@ -49,11 +49,11 @@ void gmb_array_get(gmb_array *obj, size_t i, void* result) {
 }
 
 void* gmb_array_iter_next(gmb_array *obj, void *it) {
-	if(obj->cour >= obj->ele_nums) {
-		obj->cour = 0; // reset the iter courser
-		return NULL; // the end
-	}
-	memcpy(it, obj->buffer+obj->cour*obj->ele_sz, obj->ele_sz);
-	obj->cour += 1;
-	return it;
+    if(obj->cour >= obj->ele_nums) {
+        obj->cour = 0; // reset the iter courser
+        return NULL; // the end
+    }
+    memcpy(it, obj->buffer+obj->cour*obj->ele_sz, obj->ele_sz);
+    obj->cour += 1;
+    return it;
 }

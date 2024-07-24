@@ -176,6 +176,30 @@ src/core/gmb_string.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\GMBuild.dir\build.make CMakeFiles/GMBuild.dir/src/core/gmb_string.c.s
 .PHONY : src/core/gmb_string.c.s
 
+src/core/gmb_vector.obj: src/core/gmb_vector.c.obj
+.PHONY : src/core/gmb_vector.obj
+
+# target to build an object file
+src/core/gmb_vector.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GMBuild.dir\build.make CMakeFiles/GMBuild.dir/src/core/gmb_vector.c.obj
+.PHONY : src/core/gmb_vector.c.obj
+
+src/core/gmb_vector.i: src/core/gmb_vector.c.i
+.PHONY : src/core/gmb_vector.i
+
+# target to preprocess a source file
+src/core/gmb_vector.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GMBuild.dir\build.make CMakeFiles/GMBuild.dir/src/core/gmb_vector.c.i
+.PHONY : src/core/gmb_vector.c.i
+
+src/core/gmb_vector.s: src/core/gmb_vector.c.s
+.PHONY : src/core/gmb_vector.s
+
+# target to generate assembly for a file
+src/core/gmb_vector.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GMBuild.dir\build.make CMakeFiles/GMBuild.dir/src/core/gmb_vector.c.s
+.PHONY : src/core/gmb_vector.c.s
+
 src/main.obj: src/main.c.obj
 .PHONY : src/main.obj
 
@@ -215,6 +239,9 @@ help:
 	@echo ... src/core/gmb_string.obj
 	@echo ... src/core/gmb_string.i
 	@echo ... src/core/gmb_string.s
+	@echo ... src/core/gmb_vector.obj
+	@echo ... src/core/gmb_vector.i
+	@echo ... src/core/gmb_vector.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s

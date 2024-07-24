@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/GMBuild.dir/src/core/gmb_array.c.obj.d"
   "CMakeFiles/GMBuild.dir/src/core/gmb_string.c.obj"
   "CMakeFiles/GMBuild.dir/src/core/gmb_string.c.obj.d"
+  "CMakeFiles/GMBuild.dir/src/core/gmb_vector.c.obj"
+  "CMakeFiles/GMBuild.dir/src/core/gmb_vector.c.obj.d"
   "CMakeFiles/GMBuild.dir/src/main.c.obj"
   "CMakeFiles/GMBuild.dir/src/main.c.obj.d"
   "GMBuild.exe"

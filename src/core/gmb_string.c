@@ -56,14 +56,14 @@ void gmb_string_del(gmb_string *obj) {
 }
 
 void gmb_string_del_np(gmb_string *obj) {
-	free(obj->str_p);
-	obj->str_p = NULL;
-	return;
+    free(obj->str_p);
+    obj->str_p = NULL;
+    return;
 }
 
 void gmb_string_reset(gmb_string *obj,char str[]){
-	free(obj->str_p);
-	size_t str_l = strlen(str);
-	obj->str_p = (char*)malloc(sizeof(char)*str_l);
-	strcpy(obj->str_p, str);
+    free(obj->str_p);
+    size_t str_l = strlen(str);
+    obj->str_p = (char*)malloc(sizeof(char)*str_l);
+    strcpy(obj->str_p, str);
 }

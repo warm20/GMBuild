@@ -10,6 +10,7 @@
 
 typedef gmb_array array;
 typedef gmb_string string;
+typedef gmb_vector vector;
 
 #endif
 
