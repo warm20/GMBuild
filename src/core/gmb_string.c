@@ -23,7 +23,7 @@ gmb_string gmb_string_new_np(char init_s[]) {
     return p;
 }
 
-int gmb_add_string(gmb_string *obj, const char* str) {
+int gmb_string_add(gmb_string *obj,const char *str) {
     // get string length
     size_t obj_s_l = strlen(obj->str_p);
     size_t str_l = strlen(str);
@@ -38,12 +38,12 @@ int gmb_add_string(gmb_string *obj, const char* str) {
     return 0;
 }
 
-int gmb_merge_str(gmb_string *a,gmb_string *b) {
+int gmb_string_merge(gmb_string *a,gmb_string *b) {
     const char* b_str = b->str_p;
-    return gmb_add_string(a, b_str); // call add
+    return gmb_string_add(a, b_str); // call add
 }
 
-void gmb_del_string(gmb_string *obj) {
+void gmb_string_del(gmb_string *obj) {
     // check the object
     if(obj == NULL) return;
     // free memory
@@ -53,4 +53,17 @@ void gmb_del_string(gmb_string *obj) {
     obj->str_p = NULL;
     obj = NULL;
     return;
+}
+
+void gmb_string_del_np(gmb_string *obj) {
+	free(obj->str_p);
+	obj->str_p = NULL;
+	return;
+}
+
+void gmb_string_reset(gmb_string *obj,char str[]){
+	free(obj->str_p);
+	size_t str_l = strlen(str);
+	obj->str_p = (char*)malloc(sizeof(char)*str_l);
+	strcpy(obj->str_p, str);
 }
