@@ -49,6 +49,6 @@ extern void gmb_array_get(gmb_array *obj, size_t i, void* result);
 			...
 		}
 */
-extern void* gmb_array_iter_next(gmb_array *obj, void *it);
+extern void* gmb_array_next(gmb_array *obj, void *it);
 
 #endif

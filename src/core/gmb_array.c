@@ -48,7 +48,7 @@ void gmb_array_get(gmb_array *obj, size_t i, void* result) {
     memcpy(result, obj->buffer + (i * obj->ele_sz), obj->ele_sz);
 }
 
-void* gmb_array_iter_next(gmb_array *obj, void *it) {
+void* gmb_array_next(gmb_array *obj, void *it) {
     if(obj->cour >= obj->ele_nums) {
         obj->cour = 0; // reset the iter courser
         return NULL; // the end

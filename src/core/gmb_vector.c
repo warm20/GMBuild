@@ -52,8 +52,11 @@ void gmb_vector_get(gmb_vector *self, size_t i, void *res) {
     memcpy(res, self->buf_p+(i*self->ele_sz), self->ele_sz);
 }
 
-void* gmb_vector_iter_next(gmb_vector *self, void* it) {
-    if(self->cour >= self->size) return NULL;
+void* gmb_vector_next(gmb_vector *self, void* it) {
+    if(self->cour >= self->size) {
+        self->cour = 0;
+        return NULL;
+    }
     memcpy(it, self->buf_p+self->cour*self->ele_sz, self->ele_sz);
     self->cour += 1;
     return it;

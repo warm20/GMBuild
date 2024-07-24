@@ -44,6 +44,6 @@ extern void gmb_vector_popback(gmb_vector *self);
     Iter for the vector
     use: same as the array
 */
-extern void* gmb_vector_iter_next(gmb_vector *self, void* it);
+extern void* gmb_vector_next(gmb_vector *self, void* it);
 
 #endif
