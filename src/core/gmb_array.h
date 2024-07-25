@@ -24,12 +24,12 @@ extern gmb_array gmb_array_new_np(size_t ele_nums, size_t ele_size);
 /*
     Delete the array
 */
-extern void gmb_array_del(gmb_array *obj);
+extern void gmb_array_del(gmb_array *self);
 
 /*
     run the p.arr[i]=value
 */
-extern int gmb_array_set(gmb_array *obj, size_t i, void* value);
+extern int gmb_array_set(gmb_array *self, size_t i, void* value);
 
 /*
     run the result = p.arr[i]
@@ -38,7 +38,7 @@ extern int gmb_array_set(gmb_array *obj, size_t i, void* value);
         gmb_array_get(arr,n,p)
         type res = *(type*)p
 */
-extern void gmb_array_get(gmb_array *obj, size_t i, void* result);
+extern void gmb_array_get(gmb_array *self, size_t i, void* result);
 
 /*
 	This func will get the value first
@@ -49,6 +49,13 @@ extern void gmb_array_get(gmb_array *obj, size_t i, void* result);
 			...
 		}
 */
-extern void* gmb_array_next(gmb_array *obj, void *it);
+extern void* gmb_array_next(gmb_array *self, void *it);
+
+/*
+    ref iter for the array
+use:
+    p = gmb_array_ref_next(&arr);
+*/
+extern void* gmb_array_ref_next(gmb_array *self);
 
 #endif

@@ -46,4 +46,10 @@ extern void gmb_vector_popback(gmb_vector *self);
 */
 extern void* gmb_vector_next(gmb_vector *self, void* it);
 
+/*
+    Ref iter for the vector
+use: p=gmb_vector_ref_next(&vec);
+*/
+extern void* gmb_vector_ref_next(gmb_vector *self);
+
 #endif

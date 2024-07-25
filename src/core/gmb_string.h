@@ -11,39 +11,39 @@ typedef struct gmb_string {
 }gmb_string;
 
 /*
-    Init the gmb_string object
+    Init the gmb_string selfect
 */
 extern gmb_string* gmb_string_new(char init_s[]);
 
 /*
-    Create the gmb_string object without the ptr
+    Create the gmb_string selfect without the ptr
 */
 extern gmb_string gmb_string_new_np(char init_s[]);
 
 /*
-    Delete the gmb_string object
+    Delete the gmb_string selfect
 */
-extern void gmb_string_del(gmb_string *obj);
+extern void gmb_string_del(gmb_string *self);
 
 /*
-    Delete the gmb_string object with out the ptr
+    Delete the gmb_string selfect with out the ptr
 */
-extern void gmb_string_del_np(gmb_string *obj);
+extern void gmb_string_del_np(gmb_string *self);
 
 /* 
-    add_string run obj+=str
+    add_string run self+=str
 */
-extern int gmb_string_add(gmb_string *obj,const char *str);
+extern int gmb_string_add(gmb_string *self,const char *str);
 
 /*
     merge_str run a+b->a
 */
-extern int gmb_string_merge(gmb_string *a,gmb_string *b);
+extern int gmb_string_merge(gmb_string *a, gmb_string *b);
 
 /*
     reset the content of the string
 */
-extern void gmb_string_reset(gmb_string *obj, char str[]);
+extern void gmb_string_reset(gmb_string *self, char str[]);
 
 
 #endif // _GMB_STRING_H_

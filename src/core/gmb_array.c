@@ -2,6 +2,7 @@
 
 #include <stdlib.h>
 #include <string.h>
+#include <stdio.h>
 
 gmb_array* gmb_array_new(size_t ele_nums, size_t ele_size) {
     gmb_array *p = (gmb_array*)malloc(sizeof(gmb_array));
@@ -9,7 +10,7 @@ gmb_array* gmb_array_new(size_t ele_nums, size_t ele_size) {
     p->ele_sz = ele_size;
     p->cour = 0;
 
-    p->buffer = malloc( ele_nums * ele_size );
+    p->buffer = calloc(ele_nums, ele_size);
     return p;
 }
 
@@ -19,41 +20,51 @@ gmb_array gmb_array_new_np(size_t ele_nums, size_t ele_size) {
     p.ele_sz = ele_size;
     p.cour = 0;
 
-    p.buffer = malloc( ele_nums * ele_size );
+    p.buffer = calloc(ele_nums, ele_size);
     return p;
 }
 
-void gmb_array_del(gmb_array *obj) {
-    if(obj==NULL) return;
-    free(obj->buffer);
-    obj->buffer = NULL;
-    free(obj);
-    obj = NULL;
+void gmb_array_del(gmb_array *self) {
+    if(self==NULL) return;
+    free(self->buffer);
+    self->buffer = NULL;
+    free(self);
+    self = NULL;
     return;
 }
 
-int gmb_array_set(gmb_array *obj, size_t i, void* value) {
-    if(i<0 || i>obj->ele_nums) {
+int gmb_array_set(gmb_array *self, size_t i, void* value) {
+    if(i<0 || i>self->ele_nums) {
         return -1;
     }
-    memcpy(obj->buffer + i*obj->ele_sz, value, obj->ele_sz);
+    memcpy(self->buffer + i*self->ele_sz, value, self->ele_sz);
     return 0;
 }
 
-void gmb_array_get(gmb_array *obj, size_t i, void* result) {
-    if(i > obj->ele_nums || i<0) {
+void gmb_array_get(gmb_array *self, size_t i, void* result) {
+    if(i > self->ele_nums || i<0) {
         result=NULL;
         return;
     }
-    memcpy(result, obj->buffer + (i * obj->ele_sz), obj->ele_sz);
+    memcpy(result, self->buffer + (i * self->ele_sz), self->ele_sz);
 }
 
-void* gmb_array_next(gmb_array *obj, void *it) {
-    if(obj->cour >= obj->ele_nums) {
-        obj->cour = 0; // reset the iter courser
+void* gmb_array_next(gmb_array *self, void *it) {
+    if(self->cour >= self->ele_nums) {
+        self->cour = 0; // reset the iter courser
+		it = NULL;
         return NULL; // the end
     }
-    memcpy(it, obj->buffer+obj->cour*obj->ele_sz, obj->ele_sz);
-    obj->cour += 1;
+    memcpy(it, self->buffer+self->cour*self->ele_sz, self->ele_sz);
+    self->cour += 1;
     return it;
+}
+
+void* gmb_array_ref_next(gmb_array *self){
+	if(self->cour >= self->ele_nums) {
+		self->cour = 0; // reset the iter courser
+		return NULL; // the end
+	}
+	self->cour += 1;
+	return self->buffer + (self->cour * self->ele_sz);
 }
