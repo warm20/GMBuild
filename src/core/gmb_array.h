@@ -27,6 +27,11 @@ extern gmb_array gmb_array_new_np(size_t ele_nums, size_t ele_size);
 extern void gmb_array_del(gmb_array *self);
 
 /*
+    Delete the array
+*/
+extern void gmb_array_del_np(gmb_array *self);
+
+/*
     run the p.arr[i]=value
 */
 extern int gmb_array_set(gmb_array *self, size_t i, void* value);
@@ -43,7 +48,7 @@ extern void gmb_array_get(gmb_array *self, size_t i, void* result);
 /*
 	This func will get the value first
 	And then return next
-	
+	(only read)
 	use:
 		while(gmb_array_iter_next(arr, p)) {
 			...
@@ -52,7 +57,7 @@ extern void gmb_array_get(gmb_array *self, size_t i, void* result);
 extern void* gmb_array_next(gmb_array *self, void *it);
 
 /*
-    ref iter for the array
+    ref iter for the array(read/write)
 use:
     p = gmb_array_ref_next(&arr);
 */

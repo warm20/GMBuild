@@ -26,6 +26,11 @@ extern gmb_vector gmb_vector_new_np(size_t ele_size);
 extern void gmb_vector_del(gmb_vector *self);
 
 /*
+    Delete the vector that create wtihout the ptr
+*/
+extern void gmb_vector_del_np(gmb_vector *self);
+
+/*
     Push the value to the vector
 */
 extern void gmb_vector_push(gmb_vector* self, void* v);
@@ -41,13 +46,13 @@ extern void gmb_vector_get(gmb_vector *self, size_t i, void *res);
 extern void gmb_vector_popback(gmb_vector *self);
 
 /*
-    Iter for the vector
+    Iter for the vector(only read)
     use: same as the array
 */
 extern void* gmb_vector_next(gmb_vector *self, void* it);
 
 /*
-    Ref iter for the vector
+    Ref iter for the vector(write/read)
 use: p=gmb_vector_ref_next(&vec);
 */
 extern void* gmb_vector_ref_next(gmb_vector *self);

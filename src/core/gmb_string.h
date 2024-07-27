@@ -30,15 +30,16 @@ extern void gmb_string_del(gmb_string *self);
 */
 extern void gmb_string_del_np(gmb_string *self);
 
+
 /* 
     add_string run self+=str
 */
-extern int gmb_string_add(gmb_string *self,const char *str);
+extern void gmb_string_add(gmb_string *self,const char *str);
 
 /*
     merge_str run a+b->a
 */
-extern int gmb_string_merge(gmb_string *a, gmb_string *b);
+extern void gmb_string_merge(gmb_string *a, gmb_string *b);
 
 /*
     reset the content of the string
