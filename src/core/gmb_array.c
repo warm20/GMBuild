@@ -47,7 +47,8 @@ void gmb_array_del(gmb_array *self) {
     Delete the array that craete withou the ptr
 */
 void gmb_array_del_np(gmb_array *self) {
-    gmb_array_del(self);
+    free(self->buffer);
+    return;
 }
 
 

@@ -96,10 +96,24 @@ CMakeFiles/GMBuild.dir/src/core/gmb_array.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/GMBuild.dir/src/core/gmb_array.c.s"
 	D:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\MyCodes\GMBuild\src\core\gmb_array.c -o CMakeFiles\GMBuild.dir\src\core\gmb_array.c.s
 
+CMakeFiles/GMBuild.dir/src/core/gmb_iterator.c.obj: CMakeFiles/GMBuild.dir/flags.make
+CMakeFiles/GMBuild.dir/src/core/gmb_iterator.c.obj: D:/MyCodes/GMBuild/src/core/gmb_iterator.c
+CMakeFiles/GMBuild.dir/src/core/gmb_iterator.c.obj: CMakeFiles/GMBuild.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\MyCodes\GMBuild\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/GMBuild.dir/src/core/gmb_iterator.c.obj"
+	D:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/GMBuild.dir/src/core/gmb_iterator.c.obj -MF CMakeFiles\GMBuild.dir\src\core\gmb_iterator.c.obj.d -o CMakeFiles\GMBuild.dir\src\core\gmb_iterator.c.obj -c D:\MyCodes\GMBuild\src\core\gmb_iterator.c
+
+CMakeFiles/GMBuild.dir/src/core/gmb_iterator.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/GMBuild.dir/src/core/gmb_iterator.c.i"
+	D:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\MyCodes\GMBuild\src\core\gmb_iterator.c > CMakeFiles\GMBuild.dir\src\core\gmb_iterator.c.i
+
+CMakeFiles/GMBuild.dir/src/core/gmb_iterator.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/GMBuild.dir/src/core/gmb_iterator.c.s"
+	D:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\MyCodes\GMBuild\src\core\gmb_iterator.c -o CMakeFiles\GMBuild.dir\src\core\gmb_iterator.c.s
+
 CMakeFiles/GMBuild.dir/src/core/gmb_string.c.obj: CMakeFiles/GMBuild.dir/flags.make
 CMakeFiles/GMBuild.dir/src/core/gmb_string.c.obj: D:/MyCodes/GMBuild/src/core/gmb_string.c
 CMakeFiles/GMBuild.dir/src/core/gmb_string.c.obj: CMakeFiles/GMBuild.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\MyCodes\GMBuild\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/GMBuild.dir/src/core/gmb_string.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\MyCodes\GMBuild\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/GMBuild.dir/src/core/gmb_string.c.obj"
 	D:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/GMBuild.dir/src/core/gmb_string.c.obj -MF CMakeFiles\GMBuild.dir\src\core\gmb_string.c.obj.d -o CMakeFiles\GMBuild.dir\src\core\gmb_string.c.obj -c D:\MyCodes\GMBuild\src\core\gmb_string.c
 
 CMakeFiles/GMBuild.dir/src/core/gmb_string.c.i: cmake_force
@@ -113,7 +127,7 @@ CMakeFiles/GMBuild.dir/src/core/gmb_string.c.s: cmake_force
 CMakeFiles/GMBuild.dir/src/core/gmb_vector.c.obj: CMakeFiles/GMBuild.dir/flags.make
 CMakeFiles/GMBuild.dir/src/core/gmb_vector.c.obj: D:/MyCodes/GMBuild/src/core/gmb_vector.c
 CMakeFiles/GMBuild.dir/src/core/gmb_vector.c.obj: CMakeFiles/GMBuild.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\MyCodes\GMBuild\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/GMBuild.dir/src/core/gmb_vector.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\MyCodes\GMBuild\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/GMBuild.dir/src/core/gmb_vector.c.obj"
 	D:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/GMBuild.dir/src/core/gmb_vector.c.obj -MF CMakeFiles\GMBuild.dir\src\core\gmb_vector.c.obj.d -o CMakeFiles\GMBuild.dir\src\core\gmb_vector.c.obj -c D:\MyCodes\GMBuild\src\core\gmb_vector.c
 
 CMakeFiles/GMBuild.dir/src/core/gmb_vector.c.i: cmake_force
@@ -128,6 +142,7 @@ CMakeFiles/GMBuild.dir/src/core/gmb_vector.c.s: cmake_force
 GMBuild_OBJECTS = \
 "CMakeFiles/GMBuild.dir/src/main.c.obj" \
 "CMakeFiles/GMBuild.dir/src/core/gmb_array.c.obj" \
+"CMakeFiles/GMBuild.dir/src/core/gmb_iterator.c.obj" \
 "CMakeFiles/GMBuild.dir/src/core/gmb_string.c.obj" \
 "CMakeFiles/GMBuild.dir/src/core/gmb_vector.c.obj"
 
@@ -136,13 +151,14 @@ GMBuild_EXTERNAL_OBJECTS =
 
 GMBuild.exe: CMakeFiles/GMBuild.dir/src/main.c.obj
 GMBuild.exe: CMakeFiles/GMBuild.dir/src/core/gmb_array.c.obj
+GMBuild.exe: CMakeFiles/GMBuild.dir/src/core/gmb_iterator.c.obj
 GMBuild.exe: CMakeFiles/GMBuild.dir/src/core/gmb_string.c.obj
 GMBuild.exe: CMakeFiles/GMBuild.dir/src/core/gmb_vector.c.obj
 GMBuild.exe: CMakeFiles/GMBuild.dir/build.make
 GMBuild.exe: CMakeFiles/GMBuild.dir/linkLibs.rsp
 GMBuild.exe: CMakeFiles/GMBuild.dir/objects1.rsp
 GMBuild.exe: CMakeFiles/GMBuild.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\MyCodes\GMBuild\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable GMBuild.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\MyCodes\GMBuild\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable GMBuild.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\GMBuild.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

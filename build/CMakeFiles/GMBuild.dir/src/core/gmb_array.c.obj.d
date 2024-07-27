@@ -20,4 +20,9 @@ CMakeFiles/GMBuild.dir/src/core/gmb_array.c.obj: \
  D:/mingw64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stddef.h \
  D:/mingw64/x86_64-w64-mingw32/include/stddef.h \
  D:/mingw64/x86_64-w64-mingw32/include/string.h \
- D:/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h
+ D:/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
+ D:/mingw64/x86_64-w64-mingw32/include/stdio.h \
+ D:/mingw64/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
+ D:/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
+ D:/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
+ D:/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h

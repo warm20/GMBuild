@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/MyCodes/GMBuild/src/core/gmb_array.c" "CMakeFiles/GMBuild.dir/src/core/gmb_array.c.obj" "gcc" "CMakeFiles/GMBuild.dir/src/core/gmb_array.c.obj.d"
+  "D:/MyCodes/GMBuild/src/core/gmb_iterator.c" "CMakeFiles/GMBuild.dir/src/core/gmb_iterator.c.obj" "gcc" "CMakeFiles/GMBuild.dir/src/core/gmb_iterator.c.obj.d"
   "D:/MyCodes/GMBuild/src/core/gmb_string.c" "CMakeFiles/GMBuild.dir/src/core/gmb_string.c.obj" "gcc" "CMakeFiles/GMBuild.dir/src/core/gmb_string.c.obj.d"
   "D:/MyCodes/GMBuild/src/core/gmb_vector.c" "CMakeFiles/GMBuild.dir/src/core/gmb_vector.c.obj" "gcc" "CMakeFiles/GMBuild.dir/src/core/gmb_vector.c.obj.d"
   "D:/MyCodes/GMBuild/src/main.c" "CMakeFiles/GMBuild.dir/src/main.c.obj" "gcc" "CMakeFiles/GMBuild.dir/src/main.c.obj.d"

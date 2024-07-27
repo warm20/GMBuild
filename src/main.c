@@ -9,5 +9,6 @@
 #include "./core/gmb_def.h"
 
 int main(int argc, char *argv[], char *fenv[]) {
-    
+    vector v = gmb_vector_new_np(type(int));
+    gmb_vector_del_np(&v);
 }

@@ -49,7 +49,8 @@ void gmb_vector_del(gmb_vector *self)
 */
 void gmb_vector_del_np(gmb_vector *self)
 {
-    gmb_vector_del(self);
+    free(self->buf_p);
+    return;
 }
 
 

@@ -80,12 +80,12 @@ clean: CMakeFiles/GMBuild.dir/clean
 CMakeFiles/GMBuild.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\GMBuild.dir\build.make CMakeFiles/GMBuild.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\GMBuild.dir\build.make CMakeFiles/GMBuild.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\MyCodes\GMBuild\build\CMakeFiles --progress-num=1,2,3,4,5 "Built target GMBuild"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\MyCodes\GMBuild\build\CMakeFiles --progress-num=1,2,3,4,5,6 "Built target GMBuild"
 .PHONY : CMakeFiles/GMBuild.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/GMBuild.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\MyCodes\GMBuild\build\CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\MyCodes\GMBuild\build\CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/GMBuild.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\MyCodes\GMBuild\build\CMakeFiles 0
 .PHONY : CMakeFiles/GMBuild.dir/rule

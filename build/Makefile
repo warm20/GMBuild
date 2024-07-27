@@ -152,6 +152,30 @@ src/core/gmb_array.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\GMBuild.dir\build.make CMakeFiles/GMBuild.dir/src/core/gmb_array.c.s
 .PHONY : src/core/gmb_array.c.s
 
+src/core/gmb_iterator.obj: src/core/gmb_iterator.c.obj
+.PHONY : src/core/gmb_iterator.obj
+
+# target to build an object file
+src/core/gmb_iterator.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GMBuild.dir\build.make CMakeFiles/GMBuild.dir/src/core/gmb_iterator.c.obj
+.PHONY : src/core/gmb_iterator.c.obj
+
+src/core/gmb_iterator.i: src/core/gmb_iterator.c.i
+.PHONY : src/core/gmb_iterator.i
+
+# target to preprocess a source file
+src/core/gmb_iterator.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GMBuild.dir\build.make CMakeFiles/GMBuild.dir/src/core/gmb_iterator.c.i
+.PHONY : src/core/gmb_iterator.c.i
+
+src/core/gmb_iterator.s: src/core/gmb_iterator.c.s
+.PHONY : src/core/gmb_iterator.s
+
+# target to generate assembly for a file
+src/core/gmb_iterator.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GMBuild.dir\build.make CMakeFiles/GMBuild.dir/src/core/gmb_iterator.c.s
+.PHONY : src/core/gmb_iterator.c.s
+
 src/core/gmb_string.obj: src/core/gmb_string.c.obj
 .PHONY : src/core/gmb_string.obj
 
@@ -236,6 +260,9 @@ help:
 	@echo ... src/core/gmb_array.obj
 	@echo ... src/core/gmb_array.i
 	@echo ... src/core/gmb_array.s
+	@echo ... src/core/gmb_iterator.obj
+	@echo ... src/core/gmb_iterator.i
+	@echo ... src/core/gmb_iterator.s
 	@echo ... src/core/gmb_string.obj
 	@echo ... src/core/gmb_string.i
 	@echo ... src/core/gmb_string.s

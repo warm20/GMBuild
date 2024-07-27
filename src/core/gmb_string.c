@@ -53,7 +53,7 @@ void gmb_string_del(gmb_string *self)
 */
 void gmb_string_del_np(gmb_string *self) 
 {
-    gmb_string_del(self);
+    free(self->str_p);
     return;
 }
 
